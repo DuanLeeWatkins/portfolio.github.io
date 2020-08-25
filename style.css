@@ -1,0 +1,85 @@
+/* sets all HTML elements to border box sizing */
+* {
+  box-sizing: border-box;
+}
+/* sets the background for the header */
+header {
+  border: 30px;
+  padding: 40px;
+  background-color: #0A0B0D
+}
+/* aligns the image in the center */
+.picture-of-me {
+  text-align: center;
+  padding: 25px;
+  
+  
+}
+
+/* sets the image size */
+img {
+  max-width: 100%;
+}
+
+
+
+
+/* sets the body background color */
+
+body {
+  background-color: #59594A
+
+}
+/* sets the font and text position for the headings and paragraphs */
+h1, h2, p  {
+ 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+/* sets the color of the headings */
+h1 {
+   color: #7286A0;
+}
+h2 {
+  color: #BEB6B4;
+}
+
+
+/* sets the unordered list position */
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+/* sets the background for the footer */
+footer {
+  color: #BEB6B4;
+  border: 25px;
+  padding: 25px;
+  background-color:#0A0B0D;
+  
+  
+}
+
+/* sets the text color for all the sections */
+.intro, .about-me, .contact-me {
+  color:#0A0B0D;
+  overflow: hidden;
+}
+
+/* sets the margins for all the sections */
+.intro {
+  margin: 50px;
+
+}
+
+.about-me {
+  margin: 100px;
+
+}
+
+.contact-me {
+  margin: 50px;
+}
+
