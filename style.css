@@ -31,25 +31,40 @@ body {
 
 }
 /* sets the font and text position for the headings and paragraphs */
-h1, h2, p  {
+h1, h2, p, h4 {
  
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
+
 }
 
 /* sets the color of the headings */
 h1 {
    color: #7286A0;
+   font-size: 35px;
 }
 h2 {
   color: #BEB6B4;
+  font-size: 25px;
 }
 
+p {
+  font-size: 20px;
+}
 
 /* sets the unordered list position */
 ul {
   text-align: center;
   list-style-position: inside;
+  font-size: 20px;
+  height: auto;
+}
+
+ol {
+  text-align: center;
+  list-style-position: inside;
+  font-size: 20px;
+  height: auto;
 }
 
 /* sets the background for the footer */
@@ -58,6 +73,7 @@ footer {
   border: 25px;
   padding: 25px;
   background-color:#0A0B0D;
+  text-align: center;
   
   
 }
@@ -82,4 +98,17 @@ footer {
 .contact-me {
   margin: 50px;
 }
+
+
+/* sets link parameters */
+a {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+}
+
+
+a:link {color: blue}
+a:visited {color: purple}
+a:hover {color: red}
+a:active {color: aqua}
 
