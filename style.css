@@ -8,6 +8,30 @@ header {
   padding: 40px;
   background-color: #0A0B0D
 }
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li a {
+  color: #7286A0;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+head nav ul li a:hover {
+  color:rgb(70, 82, 97);
+}
 /* aligns the image in the center */
 .picture-of-me {
   text-align: center;
@@ -15,6 +39,7 @@ header {
   
   
 }
+
 
 /* sets the image size */
 img {
@@ -66,12 +91,6 @@ ul {
   height: auto;
 }
 
-ol {
-  text-align: center;
-  list-style-position: inside;
-  font-size: 20px;
-  height: auto;
-}
 
 /* sets the background for the footer */
 footer {
@@ -90,21 +109,27 @@ footer {
   overflow: hidden;
 }
 
-/* sets the margins for all the sections */
+
 
 
 
 /* sets link parameters */
-a {
+
+main a {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 20px;
+  text-decoration: none;
 }
 
 
-a:link {color: blue}
-a:visited {color: purple}
-a:hover {color: red}
-a:active {color: aqua}
+main  a:link {color: #303A46}
+main  a:visited {color: #303A46}
+main  a:hover {color: #7286A0}
+a:active {color: #7286A0}
+
+a:hover {
+  text-decoration: underline;
+}
 
 /* Groups and Items (Mobile First) */
 
@@ -139,14 +164,35 @@ a:active {color: aqua}
 
 /* Article Sections */
 
-#home, #portfolio, #contact {
+#home, #about, #portfolio, #contact {
   margin-bottom: 120px;
 }
 
 /* About Article */ 
 
-#about {
+#about, #contact {
   background-color:rgb(122, 121, 120);
   padding: 20px 0 30px 0;
   margin: 120px 0;
+}
+
+
+/* Form section */
+
+form {
+  padding-right: 8px;
+}
+
+form label {
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
