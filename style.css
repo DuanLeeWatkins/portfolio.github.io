@@ -1,9 +1,9 @@
-/* sets all HTML elements to border box sizing */
 * {
   box-sizing: border-box;
 }
 /* sets the background for the header */
 header {
+
   border: 30px;
   padding: 40px;
   background-color: #0A0B0D
@@ -19,13 +19,16 @@ header nav ul {
   display: flex;
   flex-direction: row;
   padding-bottom: 0;
+  list-style-type: none;
 }
 
 header nav ul li a {
   color: #7286A0;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding: 0 50px 0 0;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  
 
 }
 
@@ -53,10 +56,20 @@ img {
 
 body {
   margin: 0;
-  background-color: #59594A
+  background-color: #A0A08D;
 
   
 
+}
+
+/* sets the main parameters */
+main {
+  padding: 20px 0;
+}
+
+/* sets the sectio parameters */
+section {
+  margin-bottom: 100px;
 }
 /* sets the font and text position for the headings and paragraphs */
 h1, h2, p, h4 {
@@ -72,7 +85,7 @@ h1 {
    font-size: 40px;
 }
 h2 {
-  color: #BEB6B4;
+  color: #000000;
   font-size: 30px;
 }
 
@@ -122,8 +135,8 @@ main a {
 }
 
 
-main  a:link {color: #303A46}
-main  a:visited {color: #303A46}
+main  a:link {color: #010246}
+main  a:visited {color: #010246}
 main  a:hover {color: #7286A0}
 a:active {color: #7286A0}
 
@@ -151,15 +164,25 @@ a:hover {
 
 /* Groups and Items (Desktop) */
 
-@media all and (min-width: 800px) {
-  .wrapper {
-    width: 80%;
-    margin: auto;
-  }
+@media all and (min-width: 700px) {
+  
 
   .group {
     flex-direction: row;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav {
+    
+    margin-top: 14px;
+  }
+
+ 
+
 }
 
 /* Article Sections */
@@ -171,11 +194,23 @@ a:hover {
 /* About Article */ 
 
 #about, #contact {
-  background-color:rgb(122, 121, 120);
+  background-color: #9C9C9C;
   padding: 20px 0 30px 0;
   margin: 120px 0;
 }
 
+
+/* Desktop Groups and Items */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
 
 /* Form section */
 
@@ -196,3 +231,12 @@ form textarea {
 form textarea {
   height: 160px;
 }
+
+@media all and (max-width: 500px) {
+  header nav ul {
+    display: block;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+}
+
